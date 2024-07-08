@@ -82,6 +82,6 @@
 .footer-light-effect::after {
   content: '';
   @apply absolute bottom-0 left-0 w-full h-32;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.368), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(116, 116, 116, 0.368), rgba(0, 0, 0, 0));
   animation: lightGlow 2s infinite;
 }

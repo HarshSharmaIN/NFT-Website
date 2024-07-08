@@ -1,24 +1,21 @@
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Services from "./components/Services";
-import { Spotlight } from "./components/ui/Spotlight";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HomePage from "./components/pages/HomePage";
+import SellNftPage from "./components/pages/SellNftPage";
+import MyNftPage from "./components/pages/MyNftPage";
+import BuyNftPage from "./components/pages/BuyNftPage";
+import ProfilePage from "./components/pages/ProfilePage";
 
 function App() {
   return (
-    <>
-      <div className="h-screen w-full dark:bg-black bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.05] relative flex items-center justify-center overflow-hidden">
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-        <Spotlight
-          className="-top-40 left-0 md:-left-15 md:-top-40"
-          fill="white"
-        />
-        <Navbar />
-        <Hero />
-      </div>
-      <Services />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/buy-nft" element={<BuyNftPage />} />
+        <Route path="/sell-nft" element={<SellNftPage />} />
+        <Route path="/my-nft" element={<MyNftPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes>
+    </Router>
   );
 }
 
