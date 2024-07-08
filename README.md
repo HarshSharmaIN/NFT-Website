@@ -1,8 +1,52 @@
-# React + Vite
+# NFT Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Nft Market Place built using React(Vite), TailwindCss, Shadcn/ui, AceternityUI.\
+A place where you can buy and sell Nfts.\
+Visit Site at :- https://nft-website-eight-sigma.vercel.app
+## File Structure
+- NFT-Website/
+    - data/
+        - index.js
+    - public/
+    -  src/
+        - assets/
+        - components/
+            - layout/
+            - pages/
+            - components/
+            - App.jsx
+            - main.jsx
+    - utils/
+        - cn.js
+    - .eslintrc.cjs
+    - index.html
+    - package.json
+    - postcss.config.js
+    - tailwind.config.js
+    - vite.config.js
+## Deployment
 
-Currently, two official plugins are available:
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/HarshSharmaIN/NFT-Website.git
+   cd NFT-website
+   ```
+2. **Install Dependencies**
+  Ensure you have Node.js installed. Then run:
+  ```bash
+  npm install
+  ```
+3. **Run the Application**
+  Start the development server with:
+  ```bash
+  npm run dev
+  ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Documentation
+
+Some of the constants used throughout the app are stored at data/index.js. You can modify it according to your need.
+## Support
+
+For support, email at harshsharmaasl80@gmail.com.
+
