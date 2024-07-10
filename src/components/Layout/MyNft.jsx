@@ -6,7 +6,7 @@ function MyNft() {
   return (
     <>
       <Lamp title="My NFTs" />
-      <div className="flex flex-wrap justify-center gap-10 relative -top-24">
+      <div className="flex flex-wrap justify-center gap-10 relative -top-24 max-md:-top-36">
         {card_data.length ? (
           card_data.map((card, index) => {
             if (card.owned) {

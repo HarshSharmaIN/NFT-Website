@@ -31,7 +31,7 @@ export function SellNftForm() {
   };
 
   return (
-    <div className="relative max-w-md w-full mx-auto mt-28 rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black z-50">
+    <div className="relative max-w-md w-full mx-auto mt-28 max-md:mt-36 max-md:w-[90vw] rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black z-50">
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200">
         Sell your NFT
       </h2>

@@ -7,7 +7,7 @@ import { Spotlight } from "../ui/spotlight";
 function Hero() {
   return (
     <div className="h-full w-full flex justify-center flex-col items-center px-4">
-      <div className="text-4xl mx-auto mt-32 font-normal text-neutral-600 dark:text-neutral-400 text-center">
+      <div className="text-4xl max-md:text-2xl max-md:mt-44 mx-auto mt-32 font-normal text-neutral-600 dark:text-neutral-400 text-center">
         <div>
           <Spotlight
             className="-top-20 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -18,7 +18,7 @@ function Hero() {
             fill="white"
           />
         </div>
-        <span className="text-5xl line-height leading-loose font-bold">
+        <span className="text-5xl leading-loose font-bold max-md:text-3xl max-md:leading-relaxed">
           Welcome to <span className="text-green-500">NFT</span> Art Gallery.
         </span>{" "}
         <br />

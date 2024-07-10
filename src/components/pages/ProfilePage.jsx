@@ -13,20 +13,24 @@ export default function ProfilePage() {
         className="mb-4 flex items-center w-20"
         onClick={() => navigate("/")}
       >
-        <img src="left-arrow.svg" alt="" className="h-6 w-6" />
+        <img src="left-arrow.svg" alt="Back" className="h-6 w-6" />
         Home
       </Button>
       <Profile name="John Doe" email="johndoe@email.com" username="johndoe" />
       <hr className="border-t border-gray-500 mb-4" />
-      <div className="flex justify-center gap-10 overflow-x-scroll space-x-4">
+      <div className="flex overflow-x-auto py-2 space-x-4">
         {card_data.length ? (
           card_data.map((card, index) => {
             if (card.owned) {
-              return <NftCard key={index} {...card} />;
+              return (
+                <div key={index} className="flex-shrink-0">
+                  <NftCard {...card} />
+                </div>
+              );
             }
           })
         ) : (
-          <p className="text-2xl font-bold text-center">No NFTs found</p>
+          <p className="text-2xl font-bold text-center w-full">No NFTs found</p>
         )}
       </div>
     </div>

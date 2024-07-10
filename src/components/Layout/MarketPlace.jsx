@@ -22,7 +22,7 @@ function MarketPlace() {
 
   return (
     <div className="h-full w-full flex flex-col justify-center items-center px-4 ">
-      <h1 className="text-3xl font-bold mt-32 mb-12">Marketplace</h1>
+      <h1 className="text-3xl font-bold mt-32 max-md:mt-36 mb-12">Marketplace</h1>
       <div className="flex w-auto justify-center items-center gap-5">
         <SearchBar placeholders={search_placeholders} onSubmit={onSubmit} />
         <div className="flex items-center gap-2 my-5">

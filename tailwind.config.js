@@ -15,7 +15,15 @@ module.exports = {
       center: true,
       padding: "2rem",
       screens: {
-        "2xl": "1400px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+        'max-sm': {'max': '640px'},
+        'max-md': {'max': '768px'},
+        'max-lg': {'max': '1024px'},
+        'max-xl': {'max': '1280px'},
       },
     },
     extend: {
